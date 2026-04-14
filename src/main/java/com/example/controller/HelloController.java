@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +8,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "hello22";
+        return "hello2222222";
     }
 }
