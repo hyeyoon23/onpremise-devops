@@ -1,5 +1,6 @@
 server:
   port: 8080
+  shutdown: graceful
 
 spring:
   datasource:
@@ -20,3 +21,13 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
